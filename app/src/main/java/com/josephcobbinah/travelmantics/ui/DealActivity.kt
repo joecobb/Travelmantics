@@ -173,4 +173,6 @@ class DealActivity : AppCompatActivity() {
         }
     }
 
+
+
 }

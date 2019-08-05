@@ -65,6 +65,7 @@ class ListActivity : AppCompatActivity() {
         layoutManager = LinearLayoutManager(
             this, RecyclerView.VERTICAL, false
         )
+        FirebaseUtil.mDeals?.clear()
         rvDeals.adapter = adapter
         rvDeals.layoutManager = layoutManager
         FirebaseUtil.attachListener()
@@ -73,4 +74,5 @@ class ListActivity : AppCompatActivity() {
     fun showMenu(){
         invalidateOptionsMenu()
     }
+
 }
